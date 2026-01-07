@@ -10,6 +10,13 @@ GROUP BY Pclass
 ORDER BY Pclass;
 
 
+-- Insight: Majority of passengers belonged to 3rd class
+SELECT Pclass, COUNT(*) 
+FROM titanic_cleaned 
+GROUP BY Pclass;
+
+
+
 --Gender distribution
 select sex,count(*) as count from titanic_cleaned group by sex;
 
